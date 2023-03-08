@@ -1,10 +1,8 @@
-import React from "react";
-
-const Card = (props) => {
+const Card = ({ openSpots, coverImg, price, title, location, stats }) => {
   let badgeText;
-  if (props.openSpots === 0) {
+  if (openSpots === 0) {
     badgeText = "SOLD OUT";
-  } else if (props.location === "Online") {
+  } else if (location === "Online") {
     badgeText = "ONLINE";
   }
 
@@ -16,19 +14,19 @@ const Card = (props) => {
         </div>
       )}
       <img
-        src={`/assets/${props.coverImg}`}
+        src={`/assets/${coverImg}`}
         alt="cover"
         className="rounded-lg mb-2 h-80 object-cover"
       />
       <div className="flex items-center">
         <img src="/assets/Star.png" alt="star" className="h-3" />
-        <span>{props.stats.rating}</span>
-        <span className="text-dark-gray">({props.stats.reviewCount}) • </span>
-        <span className="text-dark-gray">{props.location}</span>
+        <span>{stats.rating}</span>
+        <span className="text-dark-gray">({stats.reviewCount}) • </span>
+        <span className="text-dark-gray">{location}</span>
       </div>
-      <p className="overflow-hidden text-ellipsis">{props.title}</p>
+      <p className="overflow-hidden text-ellipsis">{title}</p>
       <p className="mt-auto">
-        <span className="font-bold">From ${props.price}</span> / person
+        <span className="font-bold">From ${price}</span> / person
       </p>
     </div>
   );

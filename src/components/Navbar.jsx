@@ -1,5 +1,3 @@
-import React from "react";
-
 const Navbar = () => {
   return (
     <nav className="shadow-shadow-nav h-20 flex py-5 px-9">

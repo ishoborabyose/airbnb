@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <section className="p-5 mt-5 max-w-md mx-auto">
