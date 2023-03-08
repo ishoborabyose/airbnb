@@ -5,25 +5,24 @@ const Card = ({
   title,
   location,
   stats,
-  sold,
-  line,
+  badgeText,
 }) => {
-  let badgeText;
+  let bagde;
   if (openSpots === 0) {
-    badgeText = sold;
+    bagde = badgeText;
   } else if (location === "Online") {
-    badgeText = line;
+    bagde = badgeText;
   }
 
   return (
     <div className="w-44 text-xs flex flex-auto flex-col relative">
-      {badgeText && (
+      {bagde && (
         <div className="absolute top-2 left-2 bg-white py-1 px-2 rounded-sm font-bold">
-          {badgeText}
+          {bagde}
         </div>
       )}
       <img
-        src={`/assets/${coverImg}`}
+        src={coverImg}
         alt="cover"
         className="rounded-lg mb-2 h-80 object-cover"
       />

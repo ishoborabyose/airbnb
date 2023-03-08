@@ -5,15 +5,14 @@ const data = [
     description:
       'I will share with you what I call "Positively Impactful Moments of Disappointment." Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.',
     price: 136,
-    coverImg: "katie-zaferes.png",
+    coverImg: "/assets/katie-zaferes.png",
     stats: {
       rating: 5.0,
       reviewCount: 6,
     },
     location: "Online",
     openSpots: 0,
-    sold: "SOLD OUT",
-    line: "ONLINE",
+    badgeText: "SOLD OUT",
   },
   {
     id: 2,
@@ -21,15 +20,14 @@ const data = [
     description:
       "Interested in becoming a wedding photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave the happy couple with memories that'll last a lifetime.",
     price: 125,
-    coverImg: "wedding-photography.png",
+    coverImg: "/assets/wedding-photography.png",
     stats: {
       rating: 5.0,
       reviewCount: 30,
     },
     location: "Online",
     openSpots: 27,
-    sold: "SOLD OUT",
-    line: "ONLINE",
+    badgeText: "ONLINE",
   },
   {
     id: 3,
@@ -37,15 +35,14 @@ const data = [
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
-    coverImg: "mountain-bike.png",
+    coverImg: "/assets/mountain-bike.png",
     stats: {
       rating: 4.8,
       reviewCount: 2,
     },
     location: "Norway",
     openSpots: 3,
-    sold: "SOLD OUT",
-    line: "ONLINE",
+    badgeText: "ONLINE",
   },
 ];
 
