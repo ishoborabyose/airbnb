@@ -1,24 +1,9 @@
-const Card = ({
-  openSpots,
-  coverImg,
-  price,
-  title,
-  location,
-  stats,
-  badgeText,
-}) => {
-  let bagde;
-  if (openSpots === 0) {
-    bagde = badgeText;
-  } else if (location === "Online") {
-    bagde = badgeText;
-  }
-
+const Card = ({ coverImg, price, title, location, stats, badgeText }) => {
   return (
     <div className="w-44 text-xs flex flex-auto flex-col relative">
-      {bagde && (
+      {badgeText && (
         <div className="absolute top-2 left-2 bg-white py-1 px-2 rounded-sm font-bold">
-          {bagde}
+          {badgeText}
         </div>
       )}
       <img
