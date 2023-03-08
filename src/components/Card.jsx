@@ -1,9 +1,18 @@
-const Card = ({ openSpots, coverImg, price, title, location, stats }) => {
+const Card = ({
+  openSpots,
+  coverImg,
+  price,
+  title,
+  location,
+  stats,
+  sold,
+  line,
+}) => {
   let badgeText;
   if (openSpots === 0) {
-    badgeText = "SOLD OUT";
+    badgeText = sold;
   } else if (location === "Online") {
-    badgeText = "ONLINE";
+    badgeText = line;
   }
 
   return (
